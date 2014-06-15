@@ -29,7 +29,7 @@ RUN /usr/lib64/fluent/ruby/bin/fluent-gem install fluent-plugin-elasticsearch
 RUN yum install -y openssh-server
 RUN mkdir /var/run/sshd
 RUN echo 'root:root' |chpasswd
-
+EXPOSE 22
 
 
 #JAVA
